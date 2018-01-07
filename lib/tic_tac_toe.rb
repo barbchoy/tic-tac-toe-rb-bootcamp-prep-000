@@ -38,8 +38,8 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   whos_turn = current_player(board)
-  if valid_move?(board, index,whos_turn)
-    move(board, index)
+  if valid_move?(board, index)
+    move(board, index,whos_turn)
     display_board(board)
   else
     turn(board)
