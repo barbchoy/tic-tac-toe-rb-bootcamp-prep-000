@@ -111,8 +111,8 @@ def play(board)
     turn(board)
   end
 
-  return "Congratulations X!" of if winner(board) == "X"
-  return "Congratulations O!" of if winner(board) == "O"
+  return "Congratulations X!" if if winner(board) == "X"
+  return "Congratulations O!" if if winner(board) == "O"
 
 
 end
