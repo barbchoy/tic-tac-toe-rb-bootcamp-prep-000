@@ -111,6 +111,11 @@ def play(board)
     turn(board)
   end
 
-  return "Congratulations X!" if winner(board) == "X"
-  return "Congratulations O!" if winner(board) == "O"
-end
+  if winner(board) == "X"
+    puts "Congratulations X!"
+  elsif winner(board) == "O" 
+    puts "Congratulations O!" 
+  elsif draw?(board)
+    puts 
+  end
+end "Cat's Game!"
