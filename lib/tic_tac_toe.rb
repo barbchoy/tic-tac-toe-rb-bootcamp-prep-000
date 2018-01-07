@@ -106,11 +106,11 @@ def current_player(board)
   end
 end
 
-# def play(board)
-#   until over?(board)
-#     turn(board)
-#   end
-#
-#   return "Congratulations X!" if if winner(board) == "X"
-#   return "Congratulations O!" if if winner(board) == "O"
-# end
+def play(board)
+  until over?(board)
+    turn(board)
+  end
+
+  return "Congratulations X!" if winner(board) == "X"
+  return "Congratulations O!" if winner(board) == "O"
+end
