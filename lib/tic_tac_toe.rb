@@ -113,6 +113,6 @@ def play(board)
 
   return "Congratulations X!" of if winner(board) == "X"
   return "Congratulations O!" of if winner(board) == "O"
-  
+
 
 end
