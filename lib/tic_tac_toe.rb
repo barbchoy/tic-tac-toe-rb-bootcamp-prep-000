@@ -39,7 +39,7 @@ def turn(board)
   index = input_to_index(input)
   whos_turn = current_player(board)
   if valid_move?(board, index)
-    move(board, index,whos_turn)
+    move(board, index, whos_turn)
     display_board(board)
   else
     turn(board)
@@ -104,4 +104,11 @@ def current_player(board)
   else
     "O"
   end
+end
+
+def play(board)
+  until over?(board)
+    turn(board)
+  end
+
 end
